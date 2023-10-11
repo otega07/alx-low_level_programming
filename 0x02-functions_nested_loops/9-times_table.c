@@ -1,16 +1,23 @@
 #include "main.h"
 #include <stdio.h>
+/**
+ * times_table - function times table
+ * Return: void
+ */
+
 void times_table(void)
 {
-	int t, v, result;
-	
-	for (t = 0 ; t < 10 ; t++)
+	int t;
+	int v;
+	int result;
+
+	for (t = 0 ; t <= 9 ; t++)
 	{
-		for (v = 0 ; v < 10 ; v++)
+		for (v = 0 ; v <= 9 ; v++)
 		{
 			result = t * v;
 			if (v == 0)
-				printf("%d, ", result);
+				printf("%d ", result);
 			else
 			{
 				printf("%2d", result);
@@ -18,6 +25,6 @@ void times_table(void)
 					printf(", ");
 			}
 		}
-		printf("%c\n", '\n');
+		printf("\n");
 	}
 }
