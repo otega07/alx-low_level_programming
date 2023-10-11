@@ -6,16 +6,18 @@
 
 int main(void)
 {
-	int fib1 = 1;
-	int fib2 = 2;
-	int next;
+	unsigned long fib1 = 1;
+	unsigned long fib2 = 2;
+	unsigned long next;
 	int t;
 
-	printf("%d, %d", fib1, fib2);
-	for (t = 3 ; t < 99 ; t++)
+	printf("%lu, %lu, ", fib1, fib2);
+	for (t = 3 ; t <= 98 ; t++)
 	{
 		next = fib1 + fib2;
-		printf(", %d", next);
+		printf("%lu", next);
+		if (t != 98)
+			printf(", ");
 		fib1 = fib2;
 		fib2 = next;
 	}
