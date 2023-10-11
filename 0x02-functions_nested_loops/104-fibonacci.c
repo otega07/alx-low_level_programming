@@ -17,7 +17,7 @@ int main(void)
 
 
 	printf("%lu", now);
-	for (t = 1 ; t < 91 ; t++);
+	for (t = 1 ; t < 91 ; t++)
 	{
 		printf(", %lu", lat);
 		lat += now;
