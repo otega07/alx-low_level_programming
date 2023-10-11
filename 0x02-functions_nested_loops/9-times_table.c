@@ -23,10 +23,6 @@ void times_table(void)
 			else
 			{
 				printf(", %2d", result);
-				if (v != 9)
-				{
-					printf(", ");
-				}
 			}
 		}
 		printf("\n");
