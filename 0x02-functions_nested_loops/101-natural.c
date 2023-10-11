@@ -12,7 +12,7 @@ int main(void)
 	for (t = 0 ; t < 1024 ; t++)
 	{
 		if (t % 3 == 0 || t % 5 == 0)
-			sum = sum + 1;
+			sum = sum + t;
 	}
 	printf("%d\n", sum);
 	return (0);
