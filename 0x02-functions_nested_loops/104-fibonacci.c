@@ -6,20 +6,31 @@
 
 int main(void)
 {
-	unsigned long fib1 = 1;
-	unsigned long fib2 = 2;
-	unsigned long next;
-	int t;
+	unsigned long int t, v, e, v1, v2, e1, e2;
 
-	printf("%lu, %lu, ", fib1, fib2);
-	for (t = 3 ; t <= 98 ; t++)
+	v = 1;
+	e = 2;
+
+	printf("%lu", v);
+	for (t = 1 ; t <= 91 ; t++);
 	{
-		next = fib1 + fib2;
-		printf("%lu", next);
-		if (t != 98)
-			printf(", ");
-		fib1 = fib2;
-		fib2 = next;
+		printf(", %lu", e);
+		e = e + v;
+		v = e - v;
+	}
+	v1 = v / 1000000000;
+	v2 = v % 1000000000;
+	e1 = e / 1000000000;
+	e2 = e % 1000000000;
+
+	for (t = 92 ; t < 99 ; t++)
+	{
+		printf(", %lu", e1 + (e2 / 1000000000));
+		printf("%lu", e2 % 1000000000);
+		e1 = e1 + v1;
+		v1 = e1 - v1;
+		e2 = e2 + v2;
+		v2 = e2 - v2;
 	}
 	printf("\n");
 	return (0);
