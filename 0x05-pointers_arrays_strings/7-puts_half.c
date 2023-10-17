@@ -7,13 +7,13 @@
 void puts_half(char *str)
 {
 	int t;
-	int v;
-	int count;
+	int n;
+	int count = 0;
 
 	for (t = 0 ; str[t] != '\0' ; t++)
 		count++;
-	v = (count - 1) / 2;
-	for (t = v + 1 ; str[t] != '\0' ; t++)
+	n = (count - 1) / 2;
+	for (t = n + 1 ; str[t] != '\0' ; t++)
 		_putchar(str[t]);
 	_putchar('\n');
 }
