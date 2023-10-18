@@ -4,18 +4,20 @@
  * @n: number of bytes
  * @dest: destination
  * @src: source
- * Return: dest
+ * Return: dest + n of src
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int len = strlen(dest);
+	int len_dest;
 	int t;
 
-	for (t = 0 ; t < n && *src != '\0' ; t++)
+	for (len_dest = 0 ; dest[len_dest] != '\0'; len_dest++)
 	{
-		dest[len + t] = src[t];
-		src++;
+
 	}
-	dest[len + t] = '\0';
+	for (t = 0 ; src[t] != 0 && t < n ; t++)
+	{
+		dest[len_dest + t] = src[t];
+	}
 	return (dest);
 }
