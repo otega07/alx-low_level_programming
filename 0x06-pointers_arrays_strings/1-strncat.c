@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strncat - concatenates two string
  * @n: number of bytes
@@ -7,7 +6,6 @@
  * @src: source
  * Return: dest
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int len = strlen(dest);
