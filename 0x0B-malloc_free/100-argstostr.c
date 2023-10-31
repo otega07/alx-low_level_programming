@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * argstorstr - converts params passed to the program
+ * argstostr - converts params passed to the program
  * @ac: argument count
  * @av: argument vector
  * Return: new string or NULL if it fails
