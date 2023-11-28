@@ -14,10 +14,10 @@ int append_text_to_file(const char *filename, char *text_content)
 	tv = open(filename, O_WRONLY | O_APPEND);
 	if (tv == -1)
 		return (-1);
-	if (!text_content)
+	if (text_content == NULL)
 	{
 		close(tv);
-		return (-1);
+		return (1);
 	}
 	for (lettrs = 0; text_content[lettrs] != '\0'; lettrs++)
 		;
