@@ -13,11 +13,8 @@
 
 typedef struct listint_s
 {
-	/* Integer stored at the node. */
 	int n;
-	/* Index of the node in the list. */
 	size_t index;
-	/* Pointer to the next node. */
 	struct listint_s *next;
 } listint_t;
 
